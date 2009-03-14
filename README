@@ -1,0 +1,9 @@
+Pixel font renderer for Quartz Composer.
+To use it, you need some BDF fonts. I suggest downloading one of the "source" archives from http://artwizaleczapka.sourceforge.net/, extracting them in a subdirectory called "fonts" and then playing around with my supplied qc_bdf_example.qtz composition.
+
+interesting bug: depending on the BDF, there seems to be some x/y offset shift going on. The patch has input ports to correct this, however an automatic solution would be cooler.
+
+annoying bug: output is not sent to the gpu and therefore won't be filtered. Plugin needs a better image provider badly, but I can't find out how to do it right.
+
+Author: Anatol Ulrich, http://anatol.versteht.es/
+License: LGPL 
